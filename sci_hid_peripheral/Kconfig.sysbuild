@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2025 Nordic Semiconductor
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+source "share/sysbuild/Kconfig"
+
+if BOARD_NRF54H20DK_NRF54H20_CPUAPP
+
+config NRF_DEFAULT_IPC_RADIO
+        default y
+
+config NETCORE_IPC_RADIO_BT_HCI_IPC
+        default y
+
+endif # BOARD_NRF54H20DK_NRF54H20_CPUAPP
